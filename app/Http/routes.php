@@ -14,7 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('index',['uses'=>'UserController@index']);
 /**
  * 新增的路由
  */
