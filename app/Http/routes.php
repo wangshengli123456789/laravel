@@ -14,7 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('index',['uses'=>'UserController@index']);
+//Route::get('index',['uses'=>'UserController@index']);
+/**
+ * 新增的路由
+ */
+Route::match(['get', 'post'], 'insert',['uses'=>'UserController@insert']);
+/**
+ * 显示的路由
+ */
+Route::get('read',['uses'=>'UserController@read']);
+/**
+ * 删除的路由
+ */
+Route::get('delete/{id}',['uses'=>'UserController@delete']);
+/**
+ * 修改的路由
+ */
+Route::match(['get','post'],'update/{id}',['uses'=>'UserController@update']);
 /*
 |--------------------------------------------------------------------------
 | Application Routes
