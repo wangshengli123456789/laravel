@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="/insert" method="post">
+<form action="/insert" method="post" enctype="multipart/form-data">
     <table>
        <tr>
            <td>标题：</td>

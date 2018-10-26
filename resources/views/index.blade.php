@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<a href="/insert">新增</a>
 <table border="1" bordercolor="red" cellspacing="0">
     <th>ID</th>
     <th>标题</th>
